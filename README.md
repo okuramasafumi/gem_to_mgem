@@ -1,22 +1,22 @@
 # GemToMgem
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gem_to_mgem`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Convert gems to mgems!
 
 ## Installation
 
-Install the gem and add to the application's Gemfile by executing:
-
-    $ bundle add gem_to_mgem
-
-If bundler is not being used to manage dependencies, install the gem by executing:
+Simply run:
 
     $ gem install gem_to_mgem
 
 ## Usage
 
-TODO: Write usage instructions here
+After installation, `gem_to_mgem` command is available. Cd to the root directory of the target gem and run `gem_to_mgem`. It generates production code and test code under `mgem` directory. You need to move and tweak these files manually if you want to ship mgem.
+
+## TODO
+
+- Create complete mgems from gems, including build scripts.
+- Remove some methods that mruby doesn't support (e.g. `public_send`)
+- Support RSpec as a testing framework (it should be really hard, though)
 
 ## Development
 
